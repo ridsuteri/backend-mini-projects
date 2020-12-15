@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitCoin Ticker</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">BitCoin Converter</h1>
+    <div>
+        <h2>From Crypto To Fiat</h2>
+
+        <form action='/c2f' method="POST">
+            <input type="number" name="amount" placeholder="Amount" required step="any">
+
+            <select name="crypto">
+                <option value="BTC">Bitcoin</option>
+                <option value="ETH">Etherium</option>
+                <option value="LTC">Litecoin</option>
+            </select>
+
+            <span>To </span>
+            <select name="fiat">
+                <option value="USD">US Dollar</option>
+                <option value="EUR">European Euro</option>
+            </select>
+            <span>
+                <button type="submit">Convert</button>
+            </span>
+        </form>
+    </div>
+
+    <div>
+        <h2>From Fiat To Crypto</h2>
+
+        <form action="/f2c" method="POST">
+            <input type="number" name="amount" placeholder="Amount" required step="any">
+
+            <select name="fiat">
+                <option value="USD">US Dollar</option>
+                <option value="EUR">European Euro</option>
+            </select>
+
+
+            <span>To </span>
+            <select name="crypto">
+                <option value="BTC">Bitcoin</option>
+                <option value="ETH">Etherium</option>
+                <option value="LTC">Litecoin</option>
+            </select>
+            <span>
+                <button type="submit">Convert</button>
+            </span>
+        </form>
+    </div>
+</body>
+
+</html>
