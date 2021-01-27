@@ -1,0 +1,75 @@
+body {
+  background: #d3cce3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e9e4f0,
+    #d3cce3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e9e4f0,
+    #d3cce3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  width: 5rem;
+  height: 5rem;
+}
+
+.container {
+  margin: auto;
+  max-width: 50rem;
+  height: 65vh;
+  border: 0.2rem solid black;
+  overflow-y: auto;
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.message {
+  background-color: #bbbfca;
+  width: 24%;
+  padding: 0.7rem;
+  margin: 1.2rem 1rem;
+  border: 0.1rem solid black;
+  border-radius: 0.7rem;
+}
+
+.left {
+  float: left;
+  clear: both;
+}
+
+.right {
+  float: right;
+  clear: both;
+}
+
+.center {
+  margin: auto;
+  display: block;
+}
+#send-container {
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 61rem;
+  width: 100%;
+}
+
+#InMessage {
+  width: 75%;
+  border: 2px solid black;
+  border-radius: 0.2rem;
+  height: 2rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 0.2rem;
+  height: 2.2rem;
+}
